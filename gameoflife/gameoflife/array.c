@@ -21,7 +21,7 @@ char **createMatrix(int n, int m)
 			tab[i] = (char*)malloc(m * sizeof(char));
 			if (!tab[i])
 			{
-				deleteMatrix(&tab, i);
+				deleteMatrix(tab, i);
 				return NULL;
 			}
 		}
@@ -61,6 +61,6 @@ char** resizeMatrix(char **ptab, int n, int m)
 	for (i = 0; i<nKol; i++)
 		for (j = 0; j<mWier; j++)
 			newptab[i][j] = ptab[i][j];
-	deleteMatrix(&ptab, n);
+	deleteMatrix(ptab, n);
 	return newptab;
 }

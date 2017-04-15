@@ -54,6 +54,6 @@ char** zycie(char** ptab, int n, int m)
 			}
 		}
 	}
-	deleteMatrix(&ptab, n);
+	deleteMatrix(ptab, n);
 	return newptab;
 }

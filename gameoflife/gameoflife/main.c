@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 		printf("\n");
 	}
 	while (1) {
-		Sleep(3000);
+		Sleep(300);
 		system("cls");
 		Tab = zycie(Tab, ROW, COL);
 		for (i = 0; i < ROW; i++) {
